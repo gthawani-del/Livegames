@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="1050" viewBox="0 0 750 1050">
+<rect x="1" y="1" width="748" height="1048" rx="25" fill="#f9f7ee" stroke="#d8d1bf" stroke-width="3"/>
+<rect x="23" y="23" width="704" height="1004" rx="14" fill="#263c57" stroke="#bdab83" stroke-width="3"/>
+<defs><pattern id="weave" width="30" height="30" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0V30M5 0V30" stroke="#89a1b6" stroke-opacity=".45" stroke-width="2"/></pattern></defs>
+<rect x="39" y="39" width="672" height="972" rx="7" fill="url(#weave)" stroke="#e7dfc5" stroke-width="9"/>
+<rect x="80" y="80" width="590" height="890" fill="none" stroke="#e7dfc5" stroke-width="5"/>
+<circle cx="375" cy="525" r="128" fill="#233b56" stroke="#c5a667" stroke-width="13"/>
+<circle cx="375" cy="525" r="105" fill="none" stroke="#d9c493" stroke-width="3"/>
+<text x="375" y="584" fill="#ead5a1" font-family="Georgia,serif" font-size="180" text-anchor="middle">S</text>
+</svg>

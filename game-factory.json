@@ -1,0 +1,41 @@
+{
+  "project_id": "spartan-livegames-dragon-tiger",
+  "name": "Spartan Livegames Dragon Tiger",
+  "current_stage": "ENGINEERING",
+  "status": "active",
+  "decisions": [
+    "Dragon Tiger is the first production vertical slice.",
+    "Game truth and dealer presentation remain separate.",
+    "Round progression uses a guarded deterministic state machine.",
+    "Baccarat and Roulette remain unavailable until their routes exist."
+  ],
+  "bindings": {
+    "repository": "gthawani-del/Livegames",
+    "deployment": null,
+    "media": "repository-local-static-assets"
+  },
+  "assets": {
+    "dealer_video": "existing two-card dealer clip",
+    "cards": "existing 52-card tracked overlay library",
+    "voice": "existing deterministic prerecorded cue library",
+    "lobby_art": "three optimized original WebP images"
+  },
+  "issues": [
+    "RNG and settlement are client-side demo logic and are not production-authoritative.",
+    "Real-device iPhone Safari QA is still required."
+  ],
+  "qa": {
+    "state_machine": "passed-node-tests",
+    "game_logic": "passed-node-tests",
+    "browser_mobile": "pending",
+    "network_assets": "passed-local-route-check"
+  },
+  "release": {
+    "status": "not_ready",
+    "approval_required": true
+  },
+  "lessons": [
+    "Dealer media must follow round state; it must never determine round state.",
+    "Both card reveals require explicit state transitions rather than one generic dealing flag."
+  ]
+}
