@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#071d17" />
+    <meta
+      name="description"
+      content="A mobile-first lobby for live table games by Spartan Games."
+    />
+    <title>Spartan Live Games</title>
+    <link rel="preload" href="assets/images/dragon-tiger.webp" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#games">Skip to games</a>
+
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Spartan Live Games home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>
+          <strong>SPARTAN</strong>
+          <small>LIVE GAMES</small>
+        </span>
+      </a>
+      <span class="live-pill"><i aria-hidden="true"></i> Live</span>
+    </header>
+
+    <main>
+      <section class="hero" aria-roledescription="carousel" aria-label="Featured games">
+        <div class="hero-track">
+          <article class="hero-slide is-active" data-slide="0" aria-hidden="false">
+            <img src="assets/images/dragon-tiger.webp" alt="Dragon and tiger statues overlooking a green gaming table" />
+            <div class="hero-shade"></div>
+            <div class="hero-copy">
+              <span class="eyebrow">Now live</span>
+              <h1>Dragon Tiger</h1>
+              <a class="hero-cta" href="https://educational-contests-lab.gmtgmt.chatgpt.site">
+                Play now <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="hero-slide" data-slide="1" aria-hidden="true">
+            <img src="assets/images/baccarat.webp" alt="Baccarat cards laid on an emerald table" loading="lazy" />
+            <div class="hero-shade"></div>
+            <div class="hero-copy">
+              <span class="eyebrow">Coming soon</span>
+              <h2>Baccarat</h2>
+            </div>
+          </article>
+
+          <article class="hero-slide" data-slide="2" aria-hidden="true">
+            <img src="assets/images/roulette.webp" alt="Polished roulette wheel in a luxury gaming room" loading="lazy" />
+            <div class="hero-shade"></div>
+            <div class="hero-copy">
+              <span class="eyebrow">Coming soon</span>
+              <h2>Roulette</h2>
+            </div>
+          </article>
+        </div>
+
+        <div class="carousel-controls" aria-label="Choose featured game">
+          <button class="dot is-active" type="button" data-go-to="0" aria-label="Show Dragon Tiger" aria-current="true"></button>
+          <button class="dot" type="button" data-go-to="1" aria-label="Show Baccarat"></button>
+          <button class="dot" type="button" data-go-to="2" aria-label="Show Roulette"></button>
+        </div>
+      </section>
+
+      <section class="games" id="games" aria-labelledby="games-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">The lobby</p>
+            <h2 id="games-title">Choose a game</h2>
+          </div>
+          <span class="table-count">1 table live</span>
+        </div>
+
+        <div class="game-grid">
+          <a class="game-card" href="https://educational-contests-lab.gmtgmt.chatgpt.site">
+            <span class="game-art">
+              <img src="assets/images/dragon-tiger.webp" alt="" />
+              <span class="status status-live"><i aria-hidden="true"></i> Live</span>
+              <span class="play-button" aria-hidden="true">▶</span>
+            </span>
+            <span class="game-info">
+              <span>
+                <strong>Dragon Tiger</strong>
+                <small>Live table · Higher card wins</small>
+              </span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </span>
+          </a>
+
+          <article class="game-card is-locked" aria-label="Baccarat, coming soon">
+            <span class="game-art">
+              <img src="assets/images/baccarat.webp" alt="" loading="lazy" />
+              <span class="status">Coming soon</span>
+            </span>
+            <span class="game-info">
+              <span>
+                <strong>Baccarat</strong>
+                <small>Player · Banker · Tie</small>
+              </span>
+            </span>
+          </article>
+
+          <article class="game-card is-locked" aria-label="Roulette, coming soon">
+            <span class="game-art">
+              <img src="assets/images/roulette.webp" alt="" loading="lazy" />
+              <span class="status">Coming soon</span>
+            </span>
+            <span class="game-info">
+              <span>
+                <strong>Roulette</strong>
+                <small>Classic wheel</small>
+              </span>
+            </span>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Spartan Games</span>
+      <span>Play responsibly</span>
+    </footer>
+  </body>
+</html>
