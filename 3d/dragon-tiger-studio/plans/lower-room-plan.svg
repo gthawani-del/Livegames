@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1200" viewBox="0 0 1000 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Dragon Tiger lower-room engineering plan</title>
+  <desc id="desc">Top-down concept plan showing the entrance, cinematic route, gameplay camera, table, dealer movement envelope, camera-left shoe, Dragon and Tiger card anchors, discard tray and rear display alcoves.</desc>
+  <rect width="1000" height="1200" fill="#fff"/>
+  <g fill="none" stroke="#111" stroke-width="4">
+    <path d="M120 90H880V1110H640M360 1110H120Z"/>
+    <path d="M360 1110V1160H640V1110" stroke-width="2"/>
+    <path d="M420 830 C390 760 390 650 450 600 C485 570 515 570 550 600 C610 650 610 760 580 830 C540 865 460 865 420 830Z"/>
+    <path d="M438 812 C425 752 430 670 465 630 C486 608 514 608 535 630 C570 670 575 752 562 812" stroke-width="2"/>
+    <ellipse cx="500" cy="525" rx="120" ry="75" stroke-dasharray="12 8"/>
+    <path d="M500 1070 C500 940 500 845 500 760" stroke="#555" stroke-width="8" marker-end="url(#arrow)"/>
+    <path d="M500 925 L450 1000 L550 1000Z"/>
+    <path d="M383 648 L410 635 L426 666 L397 678Z"/>
+    <path d="M574 653 L608 648 L614 676 L580 681Z"/>
+    <rect x="454" y="696" width="36" height="52" rx="5"/>
+    <rect x="510" y="696" width="36" height="52" rx="5"/>
+    <path d="M235 120 C220 165 220 245 235 290 C270 310 330 310 365 290 C380 245 380 165 365 120Z"/>
+    <path d="M635 120 C620 165 620 245 635 290 C670 310 730 310 765 290 C780 245 780 165 765 120Z"/>
+    <path d="M360 1096V1124M640 1096V1124" stroke-width="2"/>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#555"/></marker>
+  </defs>
+  <g font-family="Arial, sans-serif" fill="#111">
+    <text x="50" y="45" font-size="26" font-weight="700">LOWER ROOM — CONCEPT FUNCTION PLAN</text>
+    <text x="50" y="72" font-size="15">Scale 1:100 at 1000 px • room 10 m × 14 m • north at top</text>
+    <text x="270" y="205" font-size="18" text-anchor="middle">DRAGON RELIEF</text>
+    <text x="700" y="205" font-size="18" text-anchor="middle">TIGER RELIEF</text>
+    <text x="500" y="520" font-size="17" text-anchor="middle">DEALER ANIMATION</text>
+    <text x="500" y="543" font-size="17" text-anchor="middle">ENVELOPE</text>
+    <text x="500" y="640" font-size="18" text-anchor="middle">TABLE</text>
+    <text x="373" y="625" font-size="15" text-anchor="end">SHOE</text>
+    <text x="373" y="644" font-size="14" text-anchor="end">CAMERA-LEFT</text>
+    <text x="628" y="646" font-size="15">DISCARD</text>
+    <text x="472" y="774" font-size="14" text-anchor="middle">DRAGON</text>
+    <text x="528" y="774" font-size="14" text-anchor="middle">TIGER</text>
+    <text x="500" y="1022" font-size="16" text-anchor="middle">GAMEPLAY CAMERA</text>
+    <text x="515" y="903" font-size="15">CINEMATIC ROUTE</text>
+    <text x="500" y="1187" font-size="17" text-anchor="middle">3.0 m OPEN ARRIVAL PORTAL</text>
+    <text x="885" y="115" font-size="16">N</text>
+    <path d="M890 155V125M890 125L882 137M890 125L898 137" stroke="#111" stroke-width="2" fill="none"/>
+  </g>
+</svg>

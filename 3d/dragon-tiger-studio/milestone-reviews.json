@@ -1,0 +1,43 @@
+{
+  "schema": "game-room.milestone-reviews.v1",
+  "roomId": "spartan-dragon-tiger-studio-v1",
+  "function": {
+    "status": "pending",
+    "approvedBy": "",
+    "approvedAt": "",
+    "evidence": [
+      "room-brief.json",
+      "props.json",
+      "room-layout.json",
+      "openings.json",
+      "plans/lower-room-plan.svg",
+      "plans/reflected-ceiling-plan.svg",
+      "plans/wall-elevations.svg",
+      "plans/function-plan-contact-sheet.jpg",
+      "masks/opening-contact-sheet.svg",
+      "images/prop-reference-contact-sheet-v1.jpg",
+      "images/studio-visual-target-v2.jpg",
+      "specs/dealer-system.json",
+      "specs/animation-contract.json",
+      "specs/runtime-contract.json"
+    ],
+    "strangestElement": "The paired Dragon and Tiger relief alcoves promise side identification. They fail if they resemble portals, compete with the dealer, or enter the hand/card silhouette.",
+    "notes": "Pending explicit approval of layout, camera, art direction and the four Meshy-candidate reference images. No paid 3D submission is authorized by this record."
+  },
+  "form": {
+    "status": "blocked",
+    "approvedBy": "",
+    "approvedAt": "",
+    "evidence": [],
+    "strangestElement": "",
+    "notes": "Blocked until Function approval and accepted meshes."
+  },
+  "runtime": {
+    "status": "blocked",
+    "approvedBy": "",
+    "approvedAt": "",
+    "evidence": [],
+    "strangestElement": "",
+    "notes": "Blocked until Form approval."
+  }
+}

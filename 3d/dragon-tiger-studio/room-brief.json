@@ -1,0 +1,56 @@
+{
+  "schema": "game-room.room-brief.v1",
+  "roomId": "spartan-dragon-tiger-studio-v1",
+  "family": "gameplay-room",
+  "purpose": "A mobile-first real-time 3D live-dealer studio for Dragon Tiger with a continuous cinematic entrance, readable card dealing, deterministic voice/lipsync, and reusable dealer/table systems.",
+  "runtimeSurface": "WebGL2 browser runtime with HTML betting overlay; portrait-first 390x844 reference viewport and landscape/desktop adaptations.",
+  "boundsMeters": [10.0, 14.0, 4.2],
+  "hero": {
+    "id": "dealer-and-deal-zone",
+    "role": "The dealer's face, hands, shoe, moving card and two landing cards form one uninterrupted readable hero composition.",
+    "reservedBoundsMeters": [4.2, 3.4, 2.6]
+  },
+  "symmetry": {
+    "mode": "bilateral",
+    "order": 2,
+    "appliesTo": ["architectural shell", "rear wall bays", "ceiling coves", "player approach", "Dragon/Tiger framing"],
+    "exceptions": [
+      "The functional card shoe is camera-left.",
+      "The discard tray is camera-right to balance operations without implying a second shoe.",
+      "Dealer hand motion is asymmetrical during each card extraction."
+    ]
+  },
+  "circulation": {
+    "description": "A 3.0 m clear central arrival portal leads through a 4.0 m entry corridor to the table. The cinematic camera follows this route and settles into the production gameplay camera. Player navigation ends before the table collision boundary.",
+    "minimumClearanceMeters": 1.2
+  },
+  "productionCamera": {
+    "viewport": [390, 844],
+    "location": [0.0, -2.55, 1.62],
+    "target": [0.0, 1.55, 1.36],
+    "verticalFovDegrees": 46
+  },
+  "performanceBudget": {
+    "maxSceneTriangles": 180000,
+    "maxVLowBytes": 9000000,
+    "maxHighTextureBytes": 48000000
+  },
+  "creditBudget": {
+    "maximumCredits": 120,
+    "approvalRequired": true
+  },
+  "environment": {
+    "type": "procedural-interior",
+    "identity": "spartan-emerald-black-brass-v1",
+    "source": "Blender procedural shell with generated decorative props",
+    "assignmentKey": "spartan-dragon-tiger-studio-v1"
+  },
+  "artifacts": {
+    "floorPlan": "plans/lower-room-plan.svg",
+    "reflectedCeilingPlan": "plans/reflected-ceiling-plan.svg",
+    "planMetadata": "plan-metadata.json",
+    "wallElevations": ["plans/wall-elevations.svg"],
+    "visualTarget": "visual-target.md",
+    "openingContactSheet": "masks/opening-contact-sheet.svg"
+  }
+}

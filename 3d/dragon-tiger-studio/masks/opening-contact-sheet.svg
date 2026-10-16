@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Dragon Tiger opening mask contact sheet</title>
+  <desc id="desc">Black-and-white cutter masks for the arrival portal and two backed display alcoves.</desc>
+  <rect width="1200" height="720" fill="#eee"/>
+  <g font-family="Arial, sans-serif" fill="#111">
+    <text x="50" y="55" font-size="28" font-weight="700">OPENING MASK CONTACT SHEET</text>
+    <text x="50" y="86" font-size="16">Black = Boolean cutter • white = retained wall • concept review</text>
+  </g>
+  <g transform="translate(40 125)">
+    <rect width="340" height="500" fill="#fff" stroke="#111" stroke-width="3"/>
+    <rect x="43" y="50" width="254" height="450" fill="#000"/>
+    <text x="170" y="535" font-family="Arial" font-size="17" text-anchor="middle">arrival-portal-01 • 3.0 × 3.2 m</text>
+  </g>
+  <g transform="translate(430 125)">
+    <rect width="340" height="500" fill="#fff" stroke="#111" stroke-width="3"/>
+    <rect x="42" y="120" width="256" height="256" rx="28" fill="#000"/>
+    <text x="170" y="535" font-family="Arial" font-size="17" text-anchor="middle">dragon-alcove • 1.65 × 1.65 × 0.40 m</text>
+  </g>
+  <g transform="translate(820 125)">
+    <rect width="340" height="500" fill="#fff" stroke="#111" stroke-width="3"/>
+    <rect x="42" y="120" width="256" height="256" rx="28" fill="#000"/>
+    <text x="170" y="535" font-family="Arial" font-size="17" text-anchor="middle">tiger-alcove • 1.65 × 1.65 × 0.40 m</text>
+  </g>
+</svg>

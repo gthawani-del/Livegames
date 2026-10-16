@@ -1,0 +1,48 @@
+{
+  "schema": "spartan.reference-images.v1",
+  "roomId": "spartan-dragon-tiger-studio-v1",
+  "generator": "OpenAI built-in image generation",
+  "assets": [
+    {
+      "assetId": "dragon-relief",
+      "path": "images/dragon-relief-reference-v1.jpg",
+      "status": "pending-human-approval",
+      "promptSource": "props.json:dragon-relief.imagePrompt",
+      "objectiveReview": ["complete silhouette", "mounting depth visible", "single object", "no text", "no fused room background"]
+    },
+    {
+      "assetId": "tiger-relief",
+      "path": "images/tiger-relief-reference-v1.jpg",
+      "status": "pending-human-approval",
+      "promptSource": "props.json:tiger-relief.imagePrompt",
+      "objectiveReview": ["complete silhouette", "mounting depth visible", "single object", "no text", "no fused room background"]
+    },
+    {
+      "assetId": "brass-wall-sconce",
+      "path": "images/brass-wall-sconce-reference-v1.jpg",
+      "status": "pending-human-approval",
+      "promptSource": "props.json:brass-wall-sconce.imagePrompt",
+      "objectiveReview": ["complete fixture", "mounting plate visible", "single object", "light source shielded", "no fused wall background"]
+    },
+    {
+      "assetId": "spartan-crest",
+      "path": "images/spartan-crest-reference-v1.jpg",
+      "status": "pending-human-approval",
+      "promptSource": "props.json:spartan-crest.imagePrompt",
+      "objectiveReview": ["complete silhouette", "mounting depth visible", "single original mark", "no words or letters", "no copied logo"]
+    }
+  ],
+  "visualTargets": [
+    {
+      "path": "images/studio-visual-target-v1.jpg",
+      "status": "rejected",
+      "reason": "It shows four loose table cards and therefore violates the two-card gameplay/readability contract."
+    },
+    {
+      "path": "images/studio-visual-target-v2.jpg",
+      "status": "pending-human-approval",
+      "objectiveReview": ["dealer close", "shoe camera-left", "two empty landing zones", "face/hands/table visible", "Dragon/Tiger reliefs outside dealer silhouette"]
+    }
+  ],
+  "contactSheet": "images/prop-reference-contact-sheet-v1.jpg"
+}

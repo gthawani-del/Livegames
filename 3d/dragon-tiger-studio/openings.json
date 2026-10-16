@@ -1,0 +1,49 @@
+{
+  "schema": "game-room.opening-schedule.v1",
+  "roomId": "spartan-dragon-tiger-studio-v1",
+  "primaryArrival": {
+    "openingId": "arrival-portal-01",
+    "exception": ""
+  },
+  "openings": [
+    {
+      "id": "arrival-portal-01",
+      "type": "door",
+      "wall": "south-wall",
+      "centerMeters": [0.0, -6.0, 1.6],
+      "widthMeters": 3.0,
+      "heightMeters": 3.2,
+      "sillOrThresholdMeters": 0.0,
+      "depthMeters": 4.0,
+      "destination": "Visible entry corridor leading directly to the table studio",
+      "closure": "always open during cinematic entry; collision boundary closes before gameplay camera settles",
+      "mask": "masks/arrival-portal-01.svg"
+    },
+    {
+      "id": "dragon-display-alcove-01",
+      "type": "deep_alcove",
+      "wall": "north-wall",
+      "centerMeters": [-2.15, 7.88, 2.35],
+      "widthMeters": 1.65,
+      "heightMeters": 1.65,
+      "sillOrThresholdMeters": 1.525,
+      "depthMeters": 0.40,
+      "destination": "Backed display recess for Dragon relief",
+      "closure": "non-traversable backed alcove",
+      "mask": "masks/dragon-display-alcove-01.svg"
+    },
+    {
+      "id": "tiger-display-alcove-01",
+      "type": "deep_alcove",
+      "wall": "north-wall",
+      "centerMeters": [2.15, 7.88, 2.35],
+      "widthMeters": 1.65,
+      "heightMeters": 1.65,
+      "sillOrThresholdMeters": 1.525,
+      "depthMeters": 0.40,
+      "destination": "Backed display recess for Tiger relief",
+      "closure": "non-traversable backed alcove",
+      "mask": "masks/tiger-display-alcove-01.svg"
+    }
+  ]
+}

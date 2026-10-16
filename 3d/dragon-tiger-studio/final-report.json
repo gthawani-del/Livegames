@@ -1,0 +1,43 @@
+{
+  "schema": "game-room.room-final-report.v1",
+  "roomId": "spartan-dragon-tiger-studio-v1",
+  "gates": {"function": false, "form": false, "runtime": false},
+  "formChecks": {
+    "floorPlanParity": false,
+    "primaryArrival": false,
+    "symmetry": false,
+    "shell": false,
+    "manifold": false,
+    "booleans": false,
+    "collisions": false,
+    "support": false,
+    "attachmentOrientation": false,
+    "ceilingAttachmentOrientation": false,
+    "seatingOrientation": false,
+    "focalDistribution": false,
+    "heroClearance": false,
+    "colonnades": false,
+    "screenClearance": false,
+    "scale": false,
+    "camera": false,
+    "ceilingCoverage": false,
+    "environmentCoverage": false,
+    "provenance": false
+  },
+  "reviewRenders": {"corners": [], "ceiling": [], "environment": {}},
+  "runtimeChecks": {
+    "vlow": false,
+    "textureTiers": false,
+    "lightmap": false,
+    "lightingManifest": false,
+    "performance": false,
+    "browserCapture": "",
+    "errors": []
+  },
+  "postmortem": {
+    "observations": ["The previous published implementation is a video prototype, not this 3D room."],
+    "corrections": ["Created a separate 3D Function package so the legacy route is not mistaken for the target architecture."],
+    "remainingRisks": ["Dealer topology/rig source not selected", "No Blender composition yet", "No real-device runtime evidence", "Authoritative backend is not implemented"]
+  },
+  "proposedLessons": []
+}

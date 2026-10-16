@@ -1,0 +1,40 @@
+{
+  "schema": "game-room.layout.v1",
+  "roomId": "spartan-dragon-tiger-studio-v1",
+  "units": "meters",
+  "surfaces": [
+    {"id": "floor", "kind": "floor", "bounds": [10.0, 14.0, 0.20], "center": [0.0, 1.0, -0.10], "material": "black-stone-matte"},
+    {"id": "north-wall", "kind": "wall", "bounds": [10.0, 0.25, 4.2], "center": [0.0, 8.0, 2.1], "material": "black-lacquer-panel"},
+    {"id": "west-wall", "kind": "wall", "bounds": [0.25, 14.0, 4.2], "center": [-5.0, 1.0, 2.1], "material": "black-lacquer-panel"},
+    {"id": "east-wall", "kind": "wall", "bounds": [0.25, 14.0, 4.2], "center": [5.0, 1.0, 2.1], "material": "black-lacquer-panel"},
+    {"id": "south-wall-left", "kind": "wall", "bounds": [3.5, 0.25, 4.2], "center": [-3.25, -6.0, 2.1], "material": "black-lacquer-panel"},
+    {"id": "south-wall-right", "kind": "wall", "bounds": [3.5, 0.25, 4.2], "center": [3.25, -6.0, 2.1], "material": "black-lacquer-panel"},
+    {"id": "ceiling", "kind": "ceiling", "bounds": [10.0, 14.0, 0.18], "center": [0.0, 1.0, 4.29], "material": "charcoal-acoustic"}
+  ],
+  "instances": [
+    {"id": "table-01", "assetId": "dragon-tiger-table", "location": [0.0, 1.45, 0.0], "rotationEulerDegrees": [0, 0, 0], "scale": [1, 1, 1]},
+    {"id": "dealer-female-preview", "assetId": "dealer-female-base", "location": [0.0, 2.35, 0.0], "rotationEulerDegrees": [0, 0, 180], "scale": [1, 1, 1], "runtimeVariantSlot": "dealer"},
+    {"id": "shoe-01", "assetId": "card-shoe", "location": [-1.05, 1.62, 1.02], "rotationEulerDegrees": [0, 0, -12], "scale": [1, 1, 1], "screenSide": "camera-left"},
+    {"id": "discard-01", "assetId": "discard-tray", "location": [1.18, 1.72, 1.02], "rotationEulerDegrees": [0, 0, 8], "scale": [1, 1, 1], "screenSide": "camera-right"},
+    {"id": "dragon-relief-01", "assetId": "dragon-relief", "location": [-2.15, 7.82, 2.35], "rotationEulerDegrees": [90, 0, 0], "scale": [1, 1, 1], "screenSide": "camera-left"},
+    {"id": "tiger-relief-01", "assetId": "tiger-relief", "location": [2.15, 7.82, 2.35], "rotationEulerDegrees": [90, 0, 0], "scale": [1, 1, 1], "screenSide": "camera-right"},
+    {"id": "crest-entry", "assetId": "spartan-crest", "location": [0.0, -5.84, 3.58], "rotationEulerDegrees": [90, 0, 180], "scale": [1, 1, 1]},
+    {"id": "crest-table", "assetId": "spartan-crest", "location": [0.0, 0.64, 0.82], "rotationEulerDegrees": [78, 0, 0], "scale": [0.36, 0.36, 0.36]},
+    {"id": "dragon-card-anchor", "assetId": "playing-card-system", "location": [-0.68, 0.98, 1.031], "rotationEulerDegrees": [0, 0, 0], "scale": [1, 1, 1], "screenSide": "camera-left"},
+    {"id": "tiger-card-anchor", "assetId": "playing-card-system", "location": [0.68, 0.98, 1.031], "rotationEulerDegrees": [0, 0, 0], "scale": [1, 1, 1], "screenSide": "camera-right"}
+  ],
+  "anchors": {
+    "shoeCardExit": [-1.02, 1.46, 1.17],
+    "dragonLanding": [-0.68, 0.98, 1.031],
+    "tigerLanding": [0.68, 0.98, 1.031],
+    "discardEntry": [1.13, 1.57, 1.19],
+    "dealerRoot": [0.0, 2.35, 0.0],
+    "entryCameraStart": [0.0, -5.25, 1.72],
+    "gameplayCamera": [0.0, -2.55, 1.62]
+  },
+  "productionCamera": {
+    "location": [0.0, -2.55, 1.62],
+    "target": [0.0, 1.55, 1.36],
+    "verticalFovDegrees": 46
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "spartan.dragon-tiger-runtime.v1",
+  "authority": "server-round-service",
+  "roundPayload": ["roundId", "lockedWagers", "dragonCard", "tigerCard", "outcome", "grossPrize", "netChange", "balanceAfter", "signature"],
+  "eventOrder": [
+    "BETTING_OPEN",
+    "BETTING_LOCKED",
+    "ROUND_CONFIRMED",
+    "DEAL_DRAGON",
+    "REVEAL_DRAGON",
+    "DEAL_TIGER",
+    "REVEAL_TIGER",
+    "ANNOUNCE_RESULT",
+    "SETTLE_WALLET",
+    "ROUND_COMPLETE"
+  ],
+  "presentationRules": [
+    "Rendering cannot choose cards or payouts.",
+    "Every scene event is idempotent by roundId and sequence number.",
+    "The second card may not appear until CARD_PLACED completes for DEAL_TIGER.",
+    "Voice text, visemes, result display and settlement use the same round payload.",
+    "If animation fails, hold the verified cards and expose a deterministic recovery path; never reroll."
+  ],
+  "mobile": {
+    "referenceViewport": [390, 844],
+    "targetFps": 30,
+    "preferredFps": 60,
+    "maxInitialTransferBytes": 9000000,
+    "maxSceneTriangles": 180000,
+    "requiredFeatures": ["WebGL2", "KTX2/Basis textures", "Draco or Meshopt geometry compression", "baked lighting", "limited dynamic shadows", "LOD switching"]
+  },
+  "cameraReadability": [
+    "dealer eyes at least 20 px high on reference viewport",
+    "physical card remains at true table scale",
+    "rank/suit magnifier appears inside 3D stage at reveal event",
+    "shoe and both landing anchors visible without vertical scrolling",
+    "HTML wagering controls remain outside the 3D interaction capture area"
+  ],
+  "audioLipsync": {
+    "source": "deterministic server-authored announcement template",
+    "outputs": ["audio asset", "word timings", "viseme timings", "duration"],
+    "fallback": "pre-generated verified phrase fragments with timestamp manifest",
+    "prohibited": "browser speech synthesis as production authority"
+  }
+}

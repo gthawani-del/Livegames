@@ -1,0 +1,42 @@
+{
+  "schema": "spartan.dealer-system.v1",
+  "sharedSkeleton": "spartan-humanoid-v1",
+  "baseBodies": ["dealer-female-base", "dealer-male-base"],
+  "requirements": {
+    "bodyRig": ["root", "pelvis", "spine", "neck", "head", "arms", "hands", "individual fingers"],
+    "ik": ["left-hand", "right-hand", "left-elbow-pole", "right-elbow-pole", "look-at", "chest-aim"],
+    "facial": {
+      "standard": "ARKit-compatible naming subset plus blink, jaw and emotion shapes",
+      "requiredVisemes": ["sil", "PP", "FF", "TH", "DD", "kk", "CH", "SS", "nn", "RR", "aa", "E", "ih", "oh", "ou"],
+      "expressions": ["neutral", "welcome", "win-positive", "loss-neutral", "tie-emphasis", "recovery"]
+    },
+    "lodTriangles": {"lod0": 55000, "lod1": 28000, "lod2": 14000},
+    "materialsMaximum": 8,
+    "textureTiers": {"high": "2K face/body, 1K clothing", "mobile": "1K face/body, 512 clothing"}
+  },
+  "customizationSlots": [
+    "baseBody",
+    "approvedHeadPreset",
+    "skinMaterial",
+    "hairMesh",
+    "hairMaterial",
+    "uniformMesh",
+    "uniformMaterial",
+    "accessorySet",
+    "voiceProfile",
+    "language",
+    "personalityProfile"
+  ],
+  "runtimeGenerationPolicy": {
+    "allowed": "Preset and material composition using validated assets.",
+    "notAllowed": "Untested arbitrary topology inserted directly into a live round.",
+    "customHeadPipeline": "Generate concept, fit to standard head topology, transfer blendshapes, validate rig and LODs, then publish as an approved preset."
+  },
+  "acceptance": [
+    "Both bodies play the same animation events without retiming.",
+    "Eyes and mouth remain readable at the portrait production camera.",
+    "All fingers close around the card without visible penetration.",
+    "Uniform and hair do not enter the dealing envelope.",
+    "Viseme playback follows deterministic audio timing."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "spartan.plan-metadata.v1",
+  "roomId": "spartan-dragon-tiger-studio-v1",
+  "coordinateSystem": {"units": "meters", "x": "camera right", "y": "from entrance toward dealer", "z": "up"},
+  "layers": {
+    "lowerRoom": "plans/lower-room-plan.svg",
+    "reflectedCeiling": "plans/reflected-ceiling-plan.svg"
+  },
+  "marks": [
+    {"id": "shell", "sourceGeometry": "procedural-shell-v1", "type": "evaluated top-down outline"},
+    {"id": "table", "sourceGeometry": "procedural-table-v1", "type": "evaluated top-down outline"},
+    {"id": "dealer", "sourceGeometry": "dealer-rig-envelope-v1", "type": "animation envelope"},
+    {"id": "shoe", "sourceGeometry": "procedural-shoe-v1", "type": "evaluated top-down outline"},
+    {"id": "discard", "sourceGeometry": "procedural-discard-v1", "type": "evaluated top-down outline"},
+    {"id": "camera-route", "sourceGeometry": "cinematic-spline-v1", "type": "camera travel envelope"}
+  ],
+  "readabilityContracts": [
+    "Shoe remains camera-left in every production camera tier.",
+    "Dragon remains camera-left and Tiger remains camera-right.",
+    "No background edge may cross the dealer face or moving-card silhouette.",
+    "The entry route and production camera share the same scene origin and scale."
+  ]
+}

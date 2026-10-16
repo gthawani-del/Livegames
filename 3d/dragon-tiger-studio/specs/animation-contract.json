@@ -1,0 +1,46 @@
+{
+  "schema": "spartan.dealer-animation-contract.v1",
+  "coordinateContract": {
+    "shoe": "camera-left",
+    "dragon": "camera-left",
+    "tiger": "camera-right",
+    "cardTurnCount": 1
+  },
+  "clips": [
+    {"id": "idle-neutral", "loop": true, "rootMotion": false},
+    {"id": "welcome", "loop": false, "rootMotion": false},
+    {"id": "betting-open", "loop": false, "rootMotion": false},
+    {"id": "betting-closed", "loop": false, "rootMotion": false},
+    {"id": "deal-card", "loop": false, "rootMotion": false, "parameter": "destinationAnchor"},
+    {"id": "announce-result", "loop": false, "rootMotion": false, "parameter": "result"},
+    {"id": "collect-cards", "loop": false, "rootMotion": false},
+    {"id": "recovery", "loop": false, "rootMotion": false}
+  ],
+  "dealCardTimeline": [
+    {"phase": "reach", "normalizedTime": [0.00, 0.18], "action": "right-hand IK moves to shoeCardExit"},
+    {"phase": "grip", "normalizedTime": [0.18, 0.24], "action": "card attaches to right-hand grip socket; face orientation unchanged"},
+    {"phase": "extract", "normalizedTime": [0.24, 0.43], "action": "card clears shoe along constrained path; zero face rotation"},
+    {"phase": "transport", "normalizedTime": [0.43, 0.66], "action": "hand moves to requested landing anchor"},
+    {"phase": "single-turn", "normalizedTime": [0.66, 0.78], "action": "card rotates exactly 180 degrees around its long local axis once"},
+    {"phase": "place-face-up", "normalizedTime": [0.78, 0.88], "action": "card reaches table contact height face-up"},
+    {"phase": "release", "normalizedTime": [0.88, 0.91], "action": "card detaches from grip and becomes owned by table controller"},
+    {"phase": "return", "normalizedTime": [0.91, 1.00], "action": "hand returns to neutral dealing pose"}
+  ],
+  "events": [
+    "CARD_ATTACHED",
+    "CARD_CLEARED_SHOE",
+    "CARD_FACE_VISIBLE",
+    "CARD_PLACED",
+    "HAND_CLEAR",
+    "VISEME_START",
+    "VISEME_END"
+  ],
+  "hardFailures": [
+    "card rotates before clearing shoe",
+    "more or fewer than one reveal turn",
+    "second card appears without executing deal-card",
+    "card identity differs from authoritative round payload",
+    "hand intersects shoe, card or table for more than two rendered frames",
+    "result gesture or speech names the wrong side"
+  ]
+}
